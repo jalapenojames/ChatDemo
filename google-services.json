@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "624768010595",
+    "project_id": "chatapp-676eb",
+    "storage_bucket": "chatapp-676eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624768010595:android:3bcedd8fe18644b31fab56",
+        "android_client_info": {
+          "package_name": "com.demo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624768010595-3vpk5r2kni8224au5tajlqbobf2m0otf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEJBcCaHJOIerkqbhFclYuQmKuQyuQYlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624768010595-3vpk5r2kni8224au5tajlqbobf2m0otf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:624768010595:android:ae0a52bfa98c916a1fab56",
+        "android_client_info": {
+          "package_name": "com.makola.chatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "624768010595-3vpk5r2kni8224au5tajlqbobf2m0otf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEJBcCaHJOIerkqbhFclYuQmKuQyuQYlk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "624768010595-3vpk5r2kni8224au5tajlqbobf2m0otf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

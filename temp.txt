@@ -1,0 +1,9 @@
+firebaseConfig = {
+    apiKey: "AIzaSyCu3RGvbcn3FSR2_Yd5elnPhVJPltaeMgE",
+    authDomain: "chatapp-676eb.firebaseapp.com",
+    projectId: "chatapp-676eb",
+    storageBucket: "chatapp-676eb.appspot.com",
+    messagingSenderId: "624768010595",
+    appId: "1:624768010595:web:2240f070e4fe777a1fab56",
+    measurementId: "G-R9EBCP8Y3Y"
+  }
