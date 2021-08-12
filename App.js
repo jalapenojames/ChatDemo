@@ -2,10 +2,12 @@ import { StatusBar } from 'expo-status-bar';
 import React from 'react';
 import { StyleSheet, Text, View, Button } from 'react-native';
 import Firebase from './firebaseConfig';
+// import { AuthProvider } from './src/navigation/AuthProvider'
 
 // adding ChatApp
 import { DefaultTheme, Provider as PaperProvider } from 'react-native-paper';
 import Routes from './src/navigation/Routes';
+import { AuthProvider } from './src/navigation/AuthProvider';
 
 const theme = {
   ...DefaultTheme,
@@ -36,7 +38,9 @@ await fireStore.collection('Users').add({name:"abc"});
     //         <Button onPress={register} title="Register"></Button>
     //       </View>
     <PaperProvider theme={theme}>
-      <Routes />  
+      <AuthProvider>
+        <Routes />  
+      </AuthProvider>
     </PaperProvider>
 
   );
