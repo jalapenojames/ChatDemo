@@ -6,7 +6,7 @@ import FormButton from '../components/FormButton';
 import { AuthContext } from '../navigation/AuthProvider';
 
 export default function Login({ navigation }) {
-    // const { login } = useContext(AuthContext);
+    const { login } = useContext(AuthContext);
 
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
@@ -30,7 +30,7 @@ export default function Login({ navigation }) {
           title="Login"
           modeValue="contained"
           labelStyle={styles.loginButtonLabel}
-          // onPress={() => login(email, password)}
+          onPress={() => login(email, password)}
         />
         <FormButton
           title="New user? Join here"

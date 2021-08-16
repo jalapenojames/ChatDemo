@@ -13,16 +13,19 @@ export const AuthProvider = ({ children }) => {
         value={{
           user,
           setUser,
-        //   login: async (email, password) => {
-        //     try {
-        //       await auth().signInWithEmailAndPassword(email, password);
-        //     } catch (e) {
-        //       console.log(e);
-        //     }
-        //   },
+          login: async (email, password) => {
+            try {
+                // await auth().signInWithEmailAndPassword(email, password);
+                const auth = Firebase.auth()
+                await auth.signInWithEmailAndPassword(email, password);
+                console.log('logging in '+email)
+            } catch (e) {
+              console.log(e);
+            }
+          },
           register: async (email, password) => {
             try {
-        //   await auth().createUserWithEmailAndPassword(email, password);
+                // await auth().createUserWithEmailAndPassword(email, password);
                 const auth = Firebase.auth()
                 await auth.createUserWithEmailAndPassword(email, password);
                 const fireStore = Firebase.firestore()
@@ -31,13 +34,15 @@ export const AuthProvider = ({ children }) => {
               console.log(e);
             }
           },
-        //   logout: async () => {
-        //     try {
-        //       await auth().signOut();
-        //     } catch (e) {
-        //       console.error(e);
-        //     }
-        //   }
+          logout: async () => {
+            try {
+                // await auth().signOut();
+                const auth = Firebase.auth()
+                await auth.signOut();
+            } catch (e) {
+              console.error(e);
+            }
+          }
         }}
       >
         {children}
